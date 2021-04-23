@@ -9,7 +9,7 @@ import cv2
 import math
 
 """ auxilary functions """
-# unwarp corodinates
+# unwarp coordinates
 def warpCoord(Minv, pt):
     out = np.matmul(Minv, (pt[0], pt[1], 1))
     return np.array([out[0]/out[2], out[1]/out[2]])
